@@ -1,0 +1,231 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="selectTextMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Text, 24pt</value>
+  </data>
+  <data name="selectTextMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 32</value>
+  </data>
+  <data name="selectTextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 67</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="selectTextMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="selectTextMenu.Text" xml:space="preserve">
+    <value>Sélectionnez une option</value>
+  </data>
+  <data name="&gt;&gt;selectTextMenu.Name" xml:space="preserve">
+    <value>selectTextMenu</value>
+  </data>
+  <data name="&gt;&gt;selectTextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectTextMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectTextMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="carLists.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 315</value>
+  </data>
+  <data name="carLists.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 61</value>
+  </data>
+  <data name="carLists.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="carLists.Text" xml:space="preserve">
+    <value>LISTE DES VOITURES</value>
+  </data>
+  <data name="&gt;&gt;carLists.Name" xml:space="preserve">
+    <value>carLists</value>
+  </data>
+  <data name="&gt;&gt;carLists.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;carLists.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;carLists.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_CommandList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 407</value>
+  </data>
+  <data name="button_CommandList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 61</value>
+  </data>
+  <data name="button_CommandList.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="button_CommandList.Text" xml:space="preserve">
+    <value>LISTE DES COMMANDES</value>
+  </data>
+  <data name="&gt;&gt;button_CommandList.Name" xml:space="preserve">
+    <value>button_CommandList</value>
+  </data>
+  <data name="&gt;&gt;button_CommandList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_CommandList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_CommandList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button_CustomerList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 221</value>
+  </data>
+  <data name="button_CustomerList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 61</value>
+  </data>
+  <data name="button_CustomerList.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="button_CustomerList.Text" xml:space="preserve">
+    <value>LISTE DES CLIENTS</value>
+  </data>
+  <data name="&gt;&gt;button_CustomerList.Name" xml:space="preserve">
+    <value>button_CustomerList</value>
+  </data>
+  <data name="&gt;&gt;button_CustomerList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_CustomerList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_CustomerList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_AdminAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 132</value>
+  </data>
+  <data name="button_AdminAccount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 61</value>
+  </data>
+  <data name="button_AdminAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="button_AdminAccount.Text" xml:space="preserve">
+    <value>GERER LES COMPTES ADMINISTRATEURS</value>
+  </data>
+  <data name="&gt;&gt;button_AdminAccount.Name" xml:space="preserve">
+    <value>button_AdminAccount</value>
+  </data>
+  <data name="&gt;&gt;button_AdminAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_AdminAccount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_AdminAccount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_quit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_quit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 495</value>
+  </data>
+  <data name="button_quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 61</value>
+  </data>
+  <data name="button_quit.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="button_quit.Text" xml:space="preserve">
+    <value>SORTIR DU MENU</value>
+  </data>
+  <data name="&gt;&gt;button_quit.Name" xml:space="preserve">
+    <value>button_quit</value>
+  </data>
+  <data name="&gt;&gt;button_quit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_quit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_quit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1227, 568</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Menu administrateur</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAdminManager</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
