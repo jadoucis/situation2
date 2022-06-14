@@ -19,12 +19,14 @@ namespace Car_Rental.Models
         public string DescriptionCar { get; set; }
         public double PriceCar { get; set; }
         public bool IsRentedCar { get; set; }
+
+        public bool NeedReparedCar { get; set; }
         public int IdCarModel { get; set; }
 
         public virtual CarModel IdCarModelNavigation { get; set; }
         public virtual ICollection<Command> Commands { get; set; }
 
-        public Car(string nameCar, string licenseCar, int slotCar, string descriptionCar, double priceCar, bool isRentedCar, int idCarModel)
+        public Car(string nameCar, string licenseCar, int slotCar, string descriptionCar, double priceCar, bool isRentedCar, bool needReparedCar, int idCarModel)
         {
             NameCar = nameCar;
             LicenseCar = licenseCar;
@@ -32,6 +34,7 @@ namespace Car_Rental.Models
             DescriptionCar = descriptionCar;
             PriceCar = priceCar;
             IsRentedCar = isRentedCar;
+            NeedReparedCar = needReparedCar;
             IdCarModel = idCarModel;
         }
     }

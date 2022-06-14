@@ -39,40 +39,48 @@ namespace Car_Rental
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(458, 523);
+            this.button2.BackColor = System.Drawing.Color.DarkOrange;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(523, 697);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(297, 41);
+            this.button2.Size = new System.Drawing.Size(423, 55);
             this.button2.TabIndex = 105;
             this.button2.Text = "Quitter";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // searchBar_command
             // 
-            this.searchBar_command.Location = new System.Drawing.Point(12, 77);
+            this.searchBar_command.Location = new System.Drawing.Point(14, 103);
+            this.searchBar_command.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchBar_command.Name = "searchBar_command";
-            this.searchBar_command.Size = new System.Drawing.Size(274, 23);
+            this.searchBar_command.Size = new System.Drawing.Size(313, 27);
             this.searchBar_command.TabIndex = 104;
             // 
             // searchButton_Command
             // 
-            this.searchButton_Command.Location = new System.Drawing.Point(303, 77);
+            this.searchButton_Command.BackColor = System.Drawing.Color.DarkOrange;
+            this.searchButton_Command.ForeColor = System.Drawing.SystemColors.Control;
+            this.searchButton_Command.Location = new System.Drawing.Point(346, 103);
+            this.searchButton_Command.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchButton_Command.Name = "searchButton_Command";
-            this.searchButton_Command.Size = new System.Drawing.Size(80, 23);
+            this.searchButton_Command.Size = new System.Drawing.Size(91, 31);
             this.searchButton_Command.TabIndex = 103;
             this.searchButton_Command.Text = "Rechercher";
-            this.searchButton_Command.UseVisualStyleBackColor = true;
+            this.searchButton_Command.UseVisualStyleBackColor = false;
             this.searchButton_Command.Click += new System.EventHandler(this.searchButton_Command_Click);
             // 
             // searchBar_laabel
             // 
             this.searchBar_laabel.AutoSize = true;
-            this.searchBar_laabel.BackColor = System.Drawing.Color.DarkGray;
+            this.searchBar_laabel.BackColor = System.Drawing.Color.Wheat;
             this.searchBar_laabel.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBar_laabel.ForeColor = System.Drawing.Color.Orange;
-            this.searchBar_laabel.Location = new System.Drawing.Point(54, 48);
+            this.searchBar_laabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.searchBar_laabel.Location = new System.Drawing.Point(62, 64);
             this.searchBar_laabel.Name = "searchBar_laabel";
-            this.searchBar_laabel.Size = new System.Drawing.Size(172, 23);
+            this.searchBar_laabel.Size = new System.Drawing.Size(214, 29);
             this.searchBar_laabel.TabIndex = 102;
             this.searchBar_laabel.Text = "Rechercher par client";
             // 
@@ -81,9 +89,10 @@ namespace Car_Rental
             this.lvListCommands.FullRowSelect = true;
             this.lvListCommands.GridLines = true;
             this.lvListCommands.HideSelection = false;
-            this.lvListCommands.Location = new System.Drawing.Point(10, 106);
+            this.lvListCommands.Location = new System.Drawing.Point(11, 141);
+            this.lvListCommands.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lvListCommands.Name = "lvListCommands";
-            this.lvListCommands.Size = new System.Drawing.Size(1206, 411);
+            this.lvListCommands.Size = new System.Drawing.Size(1378, 547);
             this.lvListCommands.TabIndex = 101;
             this.lvListCommands.UseCompatibleStateImageBehavior = false;
             this.lvListCommands.View = System.Windows.Forms.View.Details;
@@ -92,25 +101,26 @@ namespace Car_Rental
             // 
             this.selectTextMenu.AutoSize = true;
             this.selectTextMenu.Font = new System.Drawing.Font("Sitka Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.selectTextMenu.ForeColor = System.Drawing.Color.Orange;
-            this.selectTextMenu.Location = new System.Drawing.Point(253, 7);
+            this.selectTextMenu.ForeColor = System.Drawing.Color.DarkOrange;
+            this.selectTextMenu.Location = new System.Drawing.Point(523, 9);
             this.selectTextMenu.Name = "selectTextMenu";
-            this.selectTextMenu.Size = new System.Drawing.Size(709, 47);
+            this.selectTextMenu.Size = new System.Drawing.Size(423, 58);
             this.selectTextMenu.TabIndex = 100;
-            this.selectTextMenu.Text = "Liste des commandes dans la base de données";
+            this.selectTextMenu.Text = "Liste des commandes";
             // 
             // FormCommandList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1227, 570);
+            this.BackColor = System.Drawing.Color.Wheat;
+            this.ClientSize = new System.Drawing.Size(1402, 760);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.searchBar_command);
             this.Controls.Add(this.searchButton_Command);
             this.Controls.Add(this.searchBar_laabel);
             this.Controls.Add(this.lvListCommands);
             this.Controls.Add(this.selectTextMenu);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormCommandList";
             this.Text = "Liste des commandes enregistrées dans la base de données";
             this.Load += new System.EventHandler(this.FormCommandList_Load);

@@ -35,7 +35,9 @@ namespace Car_Rental
             lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_description", Text = "Description", Width = 190 });
             lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_price", Text = "Prix HT", Width = 100 });
             lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_isRented", Text = "Loue", Width = 90 });
+            lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_needRepair", Text = "Besoin de réparation?", Width = 90 });
             lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_type", Text = "Type", Width = 160 });
+            lvCarList.Columns.Add(new ColumnHeader() { Name = "boat_nbRented", Text = "Nb location", Width = 160 });
 
             lvCarList.Items.Clear();
 
@@ -50,10 +52,14 @@ namespace Car_Rental
                     car.DescriptionCar.ToString(),
                     car.PriceCar.ToString(),
                     car.IsRentedCar ? "Non disponible" : "Disponible",
+                    car.NeedReparedCar ? "Oui" : "Non",
                     car.IdCarModelNavigation.NameCarModel});
+                    
                 lvi.Tag = car;
                 lvCarList.Items.Add(lvi);
             }
+            // Faut rajouter toutes les box avec le ".text" et dire ' xxxxx.text = ""; '
+            // Partout dans chaque refresh pour que les textbox puissent faire un effet de réinitialisation
         }
 
             // Chargement de la listview
@@ -103,6 +109,7 @@ namespace Car_Rental
                 idCarModel.Text = car.IdCarModel.ToString();
                 NameCarModel.Text = car.IdCarModelNavigation.NameCarModel.ToString();
                 RentedCar.Checked = car.IsRentedCar;
+                needRepared.Checked = car.NeedReparedCar;
             }
         }
 
@@ -122,7 +129,7 @@ namespace Car_Rental
             }
             else
             {
-                Car car = new Car(NameCar.Text.ToString(), LicenseCar.Text, Convert.ToInt32(SlotCar.Text), DescriptionCar.Text.ToString(), Convert.ToDouble(PriceCar.Text), RentedCar.Checked, Convert.ToInt32(idCarModel.SelectedValue));
+                Car car = new Car(NameCar.Text.ToString(), LicenseCar.Text, Convert.ToInt32(SlotCar.Text), DescriptionCar.Text.ToString(), Convert.ToDouble(PriceCar.Text), RentedCar.Checked, needRepared.Checked, Convert.ToInt32(idCarModel.SelectedValue));
                 CarManager.AddACar(car);
                 MessageBox.Show("Voiture ajouté");
                 Refresh();
@@ -175,6 +182,7 @@ namespace Car_Rental
                     car.DescriptionCar= DescriptionCar.Text;
                     car.PriceCar = Convert.ToDouble(PriceCar.Text);
                     car.IsRentedCar = RentedCar.Checked;
+                    car.NeedReparedCar = needRepared.Checked;
                     CarManager.EditACar(car);
                     MessageBox.Show("Voiture modifiée !");
                 }
@@ -194,6 +202,11 @@ namespace Car_Rental
         private void Leave_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void lvCarList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

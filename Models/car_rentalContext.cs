@@ -60,6 +60,7 @@ namespace Car_Rental.Models
                     .HasColumnName("Id_CarModel");
 
                 entity.Property(e => e.IsRentedCar).HasColumnName("IsRented_Car");
+                entity.Property(e => e.NeedReparedCar).HasColumnName("NeedRepared_Car");
 
                 entity.Property(e => e.LicenseCar)
                     .IsRequired()

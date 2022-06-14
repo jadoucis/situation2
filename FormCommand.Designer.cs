@@ -54,13 +54,15 @@ namespace Car_Rental
             this.nameCommand = new System.Windows.Forms.Label();
             this.button_Add = new System.Windows.Forms.Button();
             this.CreateCommand = new System.Windows.Forms.Label();
+            this.carNeedRepair = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Orange;
+            this.label6.ForeColor = System.Drawing.Color.DarkOrange;
             this.label6.Location = new System.Drawing.Point(1401, 521);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 29);
@@ -111,7 +113,7 @@ namespace Car_Rental
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Orange;
+            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
             this.label4.Location = new System.Drawing.Point(992, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(250, 29);
@@ -173,12 +175,13 @@ namespace Car_Rental
             this.dateDeb.Size = new System.Drawing.Size(169, 27);
             this.dateDeb.TabIndex = 103;
             this.dateDeb.Value = new System.DateTime(2022, 6, 6, 0, 0, 0, 0);
+            this.dateDeb.ValueChanged += new System.EventHandler(this.dateDeb_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
             this.label3.Location = new System.Drawing.Point(1029, 411);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(212, 29);
@@ -189,7 +192,7 @@ namespace Car_Rental
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Orange;
+            this.label2.ForeColor = System.Drawing.Color.DarkOrange;
             this.label2.Location = new System.Drawing.Point(1002, 344);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(241, 29);
@@ -200,7 +203,7 @@ namespace Car_Rental
             // 
             this.cautionCommand.AutoSize = true;
             this.cautionCommand.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cautionCommand.ForeColor = System.Drawing.Color.Orange;
+            this.cautionCommand.ForeColor = System.Drawing.Color.DarkOrange;
             this.cautionCommand.Location = new System.Drawing.Point(992, 468);
             this.cautionCommand.Name = "cautionCommand";
             this.cautionCommand.Size = new System.Drawing.Size(252, 29);
@@ -211,7 +214,7 @@ namespace Car_Rental
             // 
             this.totalCommand.AutoSize = true;
             this.totalCommand.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.totalCommand.ForeColor = System.Drawing.Color.Orange;
+            this.totalCommand.ForeColor = System.Drawing.Color.DarkOrange;
             this.totalCommand.Location = new System.Drawing.Point(971, 525);
             this.totalCommand.Name = "totalCommand";
             this.totalCommand.Size = new System.Drawing.Size(267, 29);
@@ -222,7 +225,7 @@ namespace Car_Rental
             // 
             this.CarName.AutoSize = true;
             this.CarName.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CarName.ForeColor = System.Drawing.Color.Orange;
+            this.CarName.ForeColor = System.Drawing.Color.DarkOrange;
             this.CarName.Location = new System.Drawing.Point(1002, 224);
             this.CarName.Name = "CarName";
             this.CarName.Size = new System.Drawing.Size(234, 29);
@@ -245,42 +248,49 @@ namespace Car_Rental
             // 
             // button_Reset
             // 
-            this.button_Reset.Location = new System.Drawing.Point(689, 689);
+            this.button_Reset.BackColor = System.Drawing.Color.DarkOrange;
+            this.button_Reset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_Reset.ForeColor = System.Drawing.SystemColors.Control;
+            this.button_Reset.Location = new System.Drawing.Point(258, 646);
             this.button_Reset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_Reset.Name = "button_Reset";
-            this.button_Reset.Size = new System.Drawing.Size(295, 55);
+            this.button_Reset.Size = new System.Drawing.Size(296, 55);
             this.button_Reset.TabIndex = 96;
             this.button_Reset.Text = "Quitter";
-            this.button_Reset.UseVisualStyleBackColor = true;
+            this.button_Reset.UseVisualStyleBackColor = false;
             this.button_Reset.Click += new System.EventHandler(this.button_Reset_Click);
             // 
             // button_Delete
             // 
+            this.button_Delete.BackColor = System.Drawing.Color.DarkOrange;
+            this.button_Delete.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Delete.Location = new System.Drawing.Point(1415, 591);
             this.button_Delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(198, 55);
             this.button_Delete.TabIndex = 95;
             this.button_Delete.Text = "Supprimer une commande";
-            this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.UseVisualStyleBackColor = false;
             this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // button_Update
             // 
+            this.button_Update.BackColor = System.Drawing.Color.DarkOrange;
+            this.button_Update.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Update.Location = new System.Drawing.Point(1191, 591);
             this.button_Update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_Update.Name = "button_Update";
             this.button_Update.Size = new System.Drawing.Size(198, 55);
             this.button_Update.TabIndex = 94;
             this.button_Update.Text = "Modifier une commande";
-            this.button_Update.UseVisualStyleBackColor = true;
+            this.button_Update.UseVisualStyleBackColor = false;
             this.button_Update.Click += new System.EventHandler(this.button_Update_Click);
             // 
             // idCommandPerson
             // 
             this.idCommandPerson.AutoSize = true;
             this.idCommandPerson.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.idCommandPerson.ForeColor = System.Drawing.Color.Orange;
+            this.idCommandPerson.ForeColor = System.Drawing.Color.DarkOrange;
             this.idCommandPerson.Location = new System.Drawing.Point(978, 157);
             this.idCommandPerson.Name = "idCommandPerson";
             this.idCommandPerson.Size = new System.Drawing.Size(268, 29);
@@ -291,8 +301,8 @@ namespace Car_Rental
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Text", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Orange;
-            this.label1.Location = new System.Drawing.Point(334, 12);
+            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label1.Location = new System.Drawing.Point(258, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 40);
             this.label1.TabIndex = 92;
@@ -302,7 +312,7 @@ namespace Car_Rental
             // 
             this.nameCommand.AutoSize = true;
             this.nameCommand.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameCommand.ForeColor = System.Drawing.Color.Orange;
+            this.nameCommand.ForeColor = System.Drawing.Color.DarkOrange;
             this.nameCommand.Location = new System.Drawing.Point(1030, 89);
             this.nameCommand.Name = "nameCommand";
             this.nameCommand.Size = new System.Drawing.Size(212, 29);
@@ -311,32 +321,60 @@ namespace Car_Rental
             // 
             // button_Add
             // 
+            this.button_Add.BackColor = System.Drawing.Color.DarkOrange;
+            this.button_Add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_Add.ForeColor = System.Drawing.SystemColors.Control;
             this.button_Add.Location = new System.Drawing.Point(955, 591);
             this.button_Add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(198, 55);
             this.button_Add.TabIndex = 90;
             this.button_Add.Text = "Créer la commande";
-            this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.UseVisualStyleBackColor = false;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
             // CreateCommand
             // 
             this.CreateCommand.AutoSize = true;
+            this.CreateCommand.BackColor = System.Drawing.Color.Wheat;
             this.CreateCommand.Font = new System.Drawing.Font("Sitka Text", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreateCommand.ForeColor = System.Drawing.Color.Orange;
+            this.CreateCommand.ForeColor = System.Drawing.Color.DarkOrange;
             this.CreateCommand.Location = new System.Drawing.Point(1125, 12);
             this.CreateCommand.Name = "CreateCommand";
             this.CreateCommand.Size = new System.Drawing.Size(298, 40);
             this.CreateCommand.TabIndex = 89;
             this.CreateCommand.Text = "Créer une commande";
             // 
+            // carNeedRepair
+            // 
+            this.carNeedRepair.AutoSize = true;
+            this.carNeedRepair.Location = new System.Drawing.Point(840, 667);
+            this.carNeedRepair.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.carNeedRepair.Name = "carNeedRepair";
+            this.carNeedRepair.Size = new System.Drawing.Size(18, 17);
+            this.carNeedRepair.TabIndex = 115;
+            this.carNeedRepair.UseVisualStyleBackColor = true;
+            this.carNeedRepair.CheckedChanged += new System.EventHandler(this.carNeedRepair_CheckedChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label5.Location = new System.Drawing.Point(629, 657);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(175, 29);
+            this.label5.TabIndex = 114;
+            this.label5.Text = "Voiture a réparé?";
+            // 
             // FormCommand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(1651, 760);
+            this.Controls.Add(this.carNeedRepair);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.montantTTC_text);
             this.Controls.Add(this.boolPaied);
@@ -398,5 +436,7 @@ namespace Car_Rental
         private System.Windows.Forms.Label nameCommand;
         private System.Windows.Forms.Button button_Add;
         private System.Windows.Forms.Label CreateCommand;
+        private System.Windows.Forms.CheckBox carNeedRepair;
+        private System.Windows.Forms.Label label5;
     }
 }

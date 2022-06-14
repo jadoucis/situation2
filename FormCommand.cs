@@ -77,6 +77,7 @@ namespace Car_Rental
                 dateDeb.Text = command.DateStartCommand.ToString();
                 dateFin.Text = command.DateEndCommand.ToString();
                 boolPaied.Checked = command.HasPaiedDepositCommand;
+                carNeedRepair.Checked = command.IdCarNavigation.NeedReparedCar;
             }
         }
 
@@ -128,16 +129,10 @@ namespace Car_Rental
             if (idCar.SelectedIndex < 0)
                 return;
             idCar.SelectedIndex = listeCar.SelectedIndex;
+            carNeedRepair.Checked = CarManager.ListCar()[listeCar.SelectedIndex].NeedReparedCar;
         }
 
-        // Rendre dépendant l'identifiant du voiture avec son nom
-
-        private void idBoat_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (idCar.SelectedIndex < 0)
-                return;
-            listeCar.SelectedIndex = idCar.SelectedIndex;
-        }
+        // Rendre dépendant l'identifiant du voiture avec son non
 
         // Ajout d'une commande via le bouton ajouter
 
@@ -161,6 +156,10 @@ namespace Car_Rental
             else if (car != null)
             {
                 MessageBox.Show("Impossible d'ajouter la commande car le véhicule est déjà pris louée.");
+            }
+            else if (carNeedRepair.Checked)
+            {
+                MessageBox.Show("Il est impossible de louer une voiture qui est en cours de réparation");
             }
             else
             {
@@ -234,6 +233,15 @@ namespace Car_Rental
         private void button_Reset_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dateDeb_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void carNeedRepair_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }

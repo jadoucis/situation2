@@ -56,5 +56,10 @@ namespace Car_Rental
         {
             Close();
         }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

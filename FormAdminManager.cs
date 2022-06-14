@@ -62,5 +62,10 @@ namespace Car_Rental
         {
             Close();
         }
+
+        private void selectTextMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
